@@ -3,9 +3,9 @@ num calculatePoints(Map<String, int> team) {
 	team.forEach((key, value) {
 		if (key == 'Free throws')
 			points += value;
-		if (key == '2 pointer')
+		else if (key == '2 pointers')
 			points += value * 2;
-		if (key == '3 pointer')
+		else if (key == '3 pointers')
 			points += value * 3;
 	});
 	return points;
